@@ -1,0 +1,1062 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Dark-Souls-IV-offical-website </title>
+
+    <style>
+        .normaltext {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 30px;
+            color: white;
+
+        }
+
+        .storytext {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 21px;
+            color: white;
+
+        }
+
+        .newstitletext {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 30px;
+            color: rgb(202, 106, 54);
+
+        }
+
+        .nav-link1 {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 30px;
+            color: white;
+
+        }
+
+        .nav-link1:hover {
+            box-shadow: 0 4px 12px 0 rgb(153, 87, 33), 0 0px 4px 0 rgba(120, 27, 27, 0.859);
+            color: rgba(233, 188, 92, 0.825);
+        }
+
+        .nav-link2 {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 30px;
+            color: white;
+
+        }
+
+        .nav-link2:hover {
+            box-shadow: 0 4px 12px 0 rgb(153, 87, 33), 0 0px 4px 0 rgba(120, 27, 27, 0.859);
+            color: rgba(0, 0, 0, 0.825);
+        }
+
+        .list-topic {
+            width: 800px;
+            height: 60px;
+            font-size: 20px;
+            text-align: left;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.479);
+        }
+
+        .list-views {
+            width: 100px;
+            height: 60px;
+            font-size: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.479);
+        }
+
+
+        .list-date {
+            width: 150px;
+            height: 60px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.479);
+        }
+
+        .btn-login {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 25px;
+            color: white;
+            background-color: rgb(83, 24, 22);
+        }
+
+        .btn-login:hover {
+            color: white;
+            background-color: rgb(165, 81, 42);
+
+        }
+
+        .btn-profile:hover {
+            box-shadow: 0 4px 12px 0 rgb(255, 255, 255), 0 0px 4px 0 rgba(255, 255, 255, 0.859);
+        }
+
+        .btn-sort {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 25px;
+            color: white;
+            background-color:
+                rgb(32, 61, 109);
+        }
+
+        .btn-sort:hover {
+            color: white;
+            background-color: rgb(42, 138, 165);
+
+        }
+
+
+        .btn-download {
+            font-family: "Times New Roman", Times, serif;
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #9f8d52;
+            border: none;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-size: 22px;
+            padding: 20px;
+            width: 300px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .btn-download:hover {
+            box-shadow: 0 6px 16px 0 rgb(133, 79, 34), 0 0px 4px 0 rgba(245, 243, 243, 0.859);
+        }
+
+        .btn-download span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .btn-download span:after {
+            content: '»';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .btn-download:hover span {
+            padding-right: 25px;
+        }
+
+        .btn-download:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+
+        .background-pic {
+            max-width: 2133px;
+            max-height: 1000px;
+            padding-top: 20%;
+            background-position: center 130;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .background-pic1 {
+            max-width: 2133px;
+            padding-top: 20%;
+            background-position: center 130;
+            background-size: cover;
+        }
+
+        .background-pic2 {
+            max-width: 2133px;
+            max-height: 1000px;
+            padding-top: 10%;
+            background-position: center 80;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .hovereffect {
+            width: 600px;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            cursor: default;
+        }
+
+        .hovereffect .overlay {
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+        }
+
+        .hovereffect img {
+            display: block;
+            position: relative;
+            -webkit-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in;
+        }
+
+        .hovereffect:hover img {
+            filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+            filter: grayscale(1) blur(3px);
+            -webkit-filter: grayscale(1) blur(3px);
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+
+        .hovereffect h2 {
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+            font-size: 17px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .hovereffect a.info {
+            display: inline-block;
+            text-decoration: none;
+            padding: 7px 14px;
+            border: 1px solid #fff;
+            margin: 50px 0 0 0;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .hovereffect a.info:hover {
+            box-shadow: 0 0 5px #fff;
+        }
+
+        .hovereffect a.info,
+        .hovereffect h2 {
+            -webkit-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+            transform: scale(0.7);
+            -webkit-transition: all 0.4s ease-in;
+            transition: all 0.4s ease-in;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            color: rgba(255, 255, 255, 0.899);
+            text-transform: uppercase;
+        }
+
+        .hovereffect:hover a.info,
+        .hovereffect:hover h2 {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+
+        .hovereffect1 {
+            width: 300px;
+            height: 300px;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            cursor: default;
+            border-style: solid;
+            border-color: rgb(132, 102, 45);
+        }
+
+        .hovereffect1 .overlay {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+
+            -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+            transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+        }
+
+        .hovereffect1:hover .overlay {
+            background-color: rgba(48, 152, 157, 0.4);
+        }
+
+        .hovereffect1 img {
+            display: block;
+            position: relative;
+        }
+
+        .hovereffect1 h2 {
+            text-transform: uppercase;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            font-size: 17px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            -webkit-transform: translateY(45px);
+            -ms-transform: translateY(45px);
+            transform: translateY(45px);
+            -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+            transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+        }
+
+        .hovereffect1:hover h2 {
+            -webkit-transform: translateY(5px);
+            -ms-transform: translateY(5px);
+            transform: translateY(5px);
+        }
+
+        .hovereffect1 button.info {
+            display: inline-block;
+            text-decoration: none;
+            padding: 7px 14px;
+            text-transform: uppercase;
+            color: #fff;
+            border: 1px solid #fff;
+            background-color: transparent;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+            -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+            transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+            font-weight: normal;
+            margin: -52px 0 0 0;
+            padding: 62px 100px;
+        }
+
+        .hovereffect1:hover button.info {
+            opacity: 1;
+            filter: alpha(opacity=100);
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+
+        .hovereffect1 button.info:hover {
+            box-shadow: 0 0 5px #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+    <div class="container-fluid">
+        <div class="col">
+            <div class="row" style="background-color: black;">
+                <!-- navbar header -->
+                <header
+                    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 fixed-top "
+                    style="background-color: black;">
+                    <!-- Brand/logo -->
+                    <a href="#home"
+                        class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
+                        data-bs-toggle="pill">
+                        <img src="https://louis-sakuya.github.io/SEG3125-Project2/images/LOGO.jpg" alt="DarkSoulsIV LOGO" width="450" height="110">
+                    </a>
+                    <!-- Navbars -->
+                    <ul class="nav justify-content-center mb-md-0 ">
+                        <li><a href="#home" class="nav-link px-4 nav-link1 active" data-bs-toggle="pill">Home</a></li>
+                        <li><a href="#concept" class="nav-link px-4 nav-link1" data-bs-toggle="pill">Concept</a></li>
+                        <li><a href="#story" class="nav-link px-4 nav-link1" data-bs-toggle="pill">Story</a></li>
+                        <li><a href="#news" class="nav-link px-4 nav-link1" data-bs-toggle="pill">News</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-4 nav-link1" href="#" id="navbardrop"
+                                data-bs-toggle="dropdown">Community</a>
+                            <div class="dropdown-menu" style="background-color:black ;">
+                                <a class="dropdown-item nav-link2"
+                                    href="https://twitter.com/fromsoftware_pr">Twitter</a>
+                                <a class="dropdown-item nav-link2" href="#community" data-bs-toggle="pill">Forum</a>
+                            </div>
+                        </li>
+                        <li><a href="#profile" class="btn btn-profile " data-bs-toggle="pill"><img
+                                    src="https://louis-sakuya.github.io/SEG3125-Project2/images/profileicon.jpg" width="50px" height="50px"></a></li>
+                    </ul>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-dark btn-login" data-bs-toggle="modal"
+                            data-bs-target="#Login">Login/Sign-up</button>
+                    </div>
+
+
+
+                </header>
+            </div>
+            <!-- Tab panes -->
+            <div class="row tab-content" style="background-color: black;">
+                <!-- Home Tab -->
+                <div class="tab-pane active container background-pic" id="home"
+                    style="background-image: url(https://louis-sakuya.github.io/SEG3125-Project2/images/tunnel-title1.jpg);">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-sm-3 text-center"></div>
+                            <div class="col-sm-3 text-center"></div>
+                            <div class="col-sm-4 text-center">
+                                <br><br><br><br><br><br>
+                                <br>
+                                <h1 class="normaltext"> Game Trailer</h1>
+                                <div class="row text-center">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive " src="https://louis-sakuya.github.io/SEG3125-Project2/images/videopreview.jpg" alt="trailerlink"
+                                            width="600" height="300">
+                                        <div class="overlay">
+                                            <h2></h2>
+                                            <br>
+                                            <br>
+                                            <a class="info" href="https://youtu.be/dQw4w9WgXcQ?autoplay=1">Watch on
+                                                Youtube</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <button class="btn-download"><span>Download BETA version </span></button>
+
+                            </div>
+                            <div class="col-sm-3 text-center"></div>
+                        </div>
+                        <div class="row" style="background-color: black;"><br>
+                            <p>
+                            <p>
+                            <p class="normaltext" style="font-size: 25px;"> The game will be supported on the following
+                                platforms</p>
+                            <img src="https://louis-sakuya.github.io/SEG3125-Project2/images/Platform.jpg">
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <!-- Concept Tab -->
+                <div class="tab-pane fade container" id="concept" style="background-color: black;"><br>
+                    <!-- carousel -->
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                        <!-- indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+
+                        <!-- carousel images -->
+                        <br><br><br><br>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://louis-sakuya.github.io/SEG3125-Project2/images/bgcastle.jpg" class="d-block" style="width:100%; height: 822px;;">
+                                <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);">
+                                    <h2>---OVERVIEW---</h2>
+                                    <p class="normaltext">Dark Souls IV is an action role-playing video game developed
+                                        by From Software and will publish by Bandai Namco for PlayStation 5, Xbox One,
+                                        and Microsoft Windows. The fourth entry in the "Dark Souls" series, Dark Souls
+                                        IV will release in worldwide in July 2nd 2023.</p>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://louis-sakuya.github.io/SEG3125-Project2/images/ninja.jpg" class="d-block" style="width:98%;height:822px; ">
+                                <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);">
+                                    <h2>---CHARACTERS---</h2>
+                                    <p class="normaltext">You can customize your characters' appearance and choose your
+                                        own weapons, gear, and magic. You can choose to be a senior mage or destroy
+                                        everything with your strength as a warrior.
+                                        The choices you make as your character grows will
+                                        be reflected in a variety of classes to suit your play style.</p>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://louis-sakuya.github.io/SEG3125-Project2/images/dragon.jpg" class="d-block" style="width:100%;height:822px;">
+                                <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.5);">
+                                    <h2>---COMBAT---</h2>
+                                    <p class="normaltext">You will also be able to use long-range weapons such as magic
+                                        and arrows, as well as close-quarter blade fighting. Stealthily kill your
+                                        enemies from the shadows, or summon your friends to even the odds. A multitude
+                                        of
+                                        strategic options are available to help you overcome the challenge.</p>
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- carousel control button -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Story Tab -->
+                <div class="tab-pane fade container background-pic2 " id="story"
+                    style="background-image: url(https://louis-sakuya.github.io/SEG3125-Project2/images/firekeeper.jpg);"><br>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col text-center" style="background-color: rgba(0, 0, 0, 0.5);">
+                                <h2 style="color: white;">---PROLOGUE---</h2>
+                                <p class="storytext">The Age of Rekindling the Flame has lasted for a long time since
+                                    the last age of Lord of Cinder usurping the flame and became the Lord of Hollows.
+                                    Everyone knew the new Age of Hollows was coming, but they were wrong. Endless
+                                    darkness has swept over everything, and the age of darkness has come. A new power
+                                    has emerged in the Dark Ages: the Curse. As a result of this power all the dead,
+                                    slumbering, imprisioned Lords are brought to life again, and are now known as
+                                    Reborners. Despite controlling this world, all of them are aware it is another
+                                    endless loop,
+                                    just like the Age of rekindling the flame.</p>
+                                <p class="storytext">Now that the flames have dissipated, the power of the curse
+                                    continues to erode the world, and everyone is living in this catastrophe, suffering
+                                    but unable to die.</p>
+                                <p class="storytext">You, Gwyn's former knight Artorias, awakened by the power of the
+                                    curse, still have the power of the abyss inside your body. And the only thing you
+                                    can do to end this meanless
+                                    world from The Curse is to let this world fall back into the Abyss again.
+                                    Defeat all the Reborners, absorb their curse powers.</p>
+                                <p class="storytext">To become the Lord of the Abyss.</p>
+                                <br><br>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- News Tab -->
+                <div class="tab-pane fade container background-pic1" id="news"
+                    style="background-image: url(https://louis-sakuya.github.io/SEG3125-Project2/images/church2.jpg); background-repeat: repeat;"><br>
+                    <div class="container-fluid ">
+                        <h1 class="text-center" style="color: white; background-color: rgba(0, 0, 0, 0.408);">---News---
+                        </h1>
+                        <div class="row">
+                            <div class="col"></div>
+                            <!-- News1 -->
+                            <div class="col">
+                                <div class="hovereffect1">
+                                    <img class="img-responsive " src="https://louis-sakuya.github.io/SEG3125-Project2/images/news.jpg" alt="news1" width="300px"
+                                        height="300px">
+                                    <div class="overlay">
+                                        <h2>Patch Note 1.1</h2>
+                                        <br>
+                                        <br>
+                                        <button type="button" class="btn info" data-bs-toggle="modal"
+                                            data-bs-target="#news1">More
+                                            Information</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- News2 -->
+                            <div class="col">
+                                <div class="hovereffect1">
+                                    <img class="img-responsive " src="https://louis-sakuya.github.io/SEG3125-Project2/images/news.jpg" alt="news2" width="300px"
+                                        height="300px">
+                                    <div class="overlay">
+                                        <h2>Patch Note 1.0</h2>
+                                        <br>
+                                        <br>
+                                        <button type="button" class="btn info" data-bs-toggle="modal"
+                                            data-bs-target="#news2">More
+                                            Information</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- News3 -->
+                            <div class="col">
+                                <div class="hovereffect1">
+                                    <img class="img-responsive " src="https://louis-sakuya.github.io/SEG3125-Project2/images/news.jpg" alt="news3" width="300px"
+                                        height="300px">
+                                    <div class="overlay">
+                                        <h2>Urgent notice - BETA TEST Released</h2>
+                                        <br>
+                                        <br>
+                                        <button type="button" class="btn info" data-bs-toggle="modal"
+                                            data-bs-target="#notice2">More
+                                            Information</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col"></div>
+                            <!-- News4 -->
+                            <div class="col">
+                                <div class="hovereffect1">
+                                    <img class="img-responsive " src="https://louis-sakuya.github.io/SEG3125-Project2/images/news2.jpg" alt="news4" width="300px"
+                                        height="300px">
+                                    <div class="overlay">
+                                        <h2>Patch Note 0.9 Alpha</h2>
+                                        <br>
+                                        <br>
+                                        <button type="button" class="btn info" data-bs-toggle="modal"
+                                            data-bs-target="#Patch1">More
+                                            Information</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- News5 -->
+                            <div class="col">
+                                <div class="hovereffect1">
+                                    <img class="img-responsive " src="https://louis-sakuya.github.io/SEG3125-Project2/images/news2.jpg" alt="news5" width="300px"
+                                        height="300px">
+                                    <div class="overlay">
+                                        <h2>Patch Note 0.8 Alpha</h2>
+                                        <br>
+                                        <br>
+                                        <button type="button" class="btn info" data-bs-toggle="modal"
+                                            data-bs-target="#news2">More
+                                            Information</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- News6 -->
+                            <div class="col">
+                                <div class="hovereffect1">
+                                    <img class="img-responsive " src="https://louis-sakuya.github.io/SEG3125-Project2/images/news.jpg" alt="news6" width="300px"
+                                        height="300px">
+                                    <div class="overlay">
+                                        <h2>Urgent notice</h2>
+                                        <br>
+                                        <br>
+                                        <button type="button" class="btn info" data-bs-toggle="modal"
+                                            data-bs-target="#notice1">More
+                                            Information</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col"></div>
+                            <!-- News7 -->
+                            <div class="col">
+                                <div class="hovereffect1">
+                                    <img class="img-responsive " src="https://louis-sakuya.github.io/SEG3125-Project2/images/news2.jpg" alt="news4" width="300px"
+                                        height="300px">
+                                    <div class="overlay">
+                                        <h2>Patch Note 0.7 Alpha</h2>
+                                        <br>
+                                        <br>
+                                        <button type="button" class="btn info" data-bs-toggle="modal"
+                                            data-bs-target="#Patch1">More
+                                            Information</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- News8 -->
+                            <div class="col">
+                                <div class="hovereffect1">
+                                    <img class="img-responsive " src="https://louis-sakuya.github.io/SEG3125-Project2/images/news2.jpg" alt="news5" width="300px"
+                                        height="300px">
+                                    <div class="overlay">
+                                        <h2>Patch Note 0.6 Alpha</h2>
+                                        <br>
+                                        <br>
+                                        <button type="button" class="btn info" data-bs-toggle="modal"
+                                            data-bs-target="#Patch1">More
+                                            Information</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- News9 -->
+                            <div class="col">
+                                <div class="hovereffect1">
+                                    <img class="img-responsive " src="https://louis-sakuya.github.io/SEG3125-Project2/images/news2.jpg" alt="news6" width="300px"
+                                        height="300px">
+                                    <div class="overlay">
+                                        <h2>Patch Note 0.5 Alpha</h2>
+                                        <br>
+                                        <br>
+                                        <button type="button" class="btn info" data-bs-toggle="modal"
+                                            data-bs-target="#Patch1">More
+                                            Information</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Forum Tab -->
+                <div class="tab-pane fade container background-pic2" id="community"
+                    style="background-image: url(https://louis-sakuya.github.io/SEG3125-Project2/images/forest.jpg);"><br>
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col"><br>
+                                <h1
+                                    style="color: rgb(255, 255, 255);background-color: rgba(0, 0, 0, 0.633); width:fit-content;">
+                                    Dark Souls IV Community</h1>
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-primary btn-sort dropdown-toggle"
+                                        data-bs-toggle="dropdown">
+                                        Sorting Order
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-center" href="#">Hot Trend</a></li>
+                                        <li><a class="dropdown-item text-center" href="#">A-Z</a></li>
+                                        <li><a class="dropdown-item text-center" href="#">Z-A</a></li>
+                                        <li><a class="dropdown-item text-center" href="#">Newest</a></li>
+                                    </ul>
+                                </div>
+
+                                <h4
+                                    style="color: rgb(255, 255, 255);background-color: rgba(0, 0, 0, 0.633);width:fit-content; height:max-content">
+                                    Post topic
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                    &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Replies&nbsp;&nbsp;Last
+                                    Reply&emsp;</h4>
+
+                                <!-- Forum List -->
+                                <div class="list-group">
+                                    <ul id="topic1" class="list-group list-group-horizontal">
+                                        <li href="#" class="list-group-item list-group-item-action list-topic">Xbox game
+                                            version bug post </li>
+                                        <li class="list-group-item list-views">350</li>
+                                        <li class="list-group-item list-date"> 16 hours ago</li>
+                                    </ul>
+                                    <ul id="topic2" class="list-group list-group-horizontal">
+                                        <li class="list-group-item list-group-item-action list-topic">I'm trapped in a
+                                            damn rock</li>
+                                        <li class="list-group-item  list-views">100</li>
+                                        <li class="list-group-item list-date">2 seconds ago</li>
+                                    </ul>
+                                    <ul id="topic3" class="list-group list-group-horizontal">
+                                        <li class="list-group-item list-group-item-action list-topic">This game is so
+                                            hard</li>
+                                        <li class="list-group-item  list-views">70</li>
+                                        <li class="list-group-item list-date">1 day ago</li>
+                                    </ul>
+                                    <ul id="topic4" class="list-group list-group-horizontal">
+                                        <li class="list-group-item list-group-item-action list-topic">
+                                            DXGI_ERROR_DEVICE_HUNG after Patch 1.1 update</li>
+                                        <li class="list-group-item  list-views">50</li>
+                                        <li class="list-group-item list-date">2 days ago</li>
+                                    </ul>
+                                    <ul id="topic5" class="list-group list-group-horizontal">
+                                        <li class="list-group-item list-group-item-action list-topic">my game always
+                                            crash</li>
+                                        <li class="list-group-item  list-views">30</li>
+                                        <li class="list-group-item list-date">2 hours ago</li>
+                                    </ul>
+                                    <ul id="topic6" class="list-group list-group-horizontal">
+                                        <li class="list-group-item list-group-item-action list-topic">cannot install it
+                                        </li>
+                                        <li class="list-group-item  list-views">60</li>
+                                        <li class="list-group-item list-date">30 seconds ago</li>
+                                    </ul>
+                                    <ul id="topic7" class="list-group list-group-horizontal">
+                                        <li class="list-group-item list-group-item-action list-topic">!!!!my keyboard
+                                            stop working during this game!!!</li>
+                                        <li class="list-group-item  list-views">80</li>
+                                        <li class="list-group-item list-date">30 mins ago</li>
+                                    </ul>
+                                    <ul id="topic8" class="list-group list-group-horizontal">
+                                        <li class="list-group-item list-group-item-action list-topic">I hope this game
+                                            actually exists</li>
+                                        <li class="list-group-item  list-views">10</li>
+                                        <li class="list-group-item list-date">10 days ago</li>
+                                    </ul>
+                                </div>
+                                <br><br>
+                                <button class="btn-download"><span>Post your idea </span></button><br>
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Profile Tab -->
+                <div class="tab-pane fade container background-pic2" id="profile"
+                    style="background-image: url(https://louis-sakuya.github.io/SEG3125-Project2/images/tunnel.jpg);"><br>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-2">
+                            </div>
+                            <div class="col-6 text-center">
+                                <p class="normaltext" style="background-color: rgba(0, 0, 0, 0.541); text-align: left;">
+                                    Beta test:<br>
+                                    Greetings, user!<br>
+                                    Welcome to the Dark Souls IV Beta Testing!<br>
+                                    From now on, you have access to the Beta testers forum. <br>
+                                    Please report any occuring errors, bugs, optimization issues and stability issues of
+                                    game client and servers to the Community.<br>
+                                    The testing will be available both in online and offline modes (Internet connection
+                                    is required in any case for logging in and checking for updates).<br>
+                                    Good luck!</p>
+                                <br>
+                                <br>
+                                <button class="btn-download"><span>Download BETA version </span></button>
+                                <br><br><br><br><br><br><br><br>
+
+
+                            </div>
+                            <div class="col-4">
+                                <button class="btn-download" style="color:#fff;background-color:  rgb(32, 37, 45);"
+                                    data-bs-toggle="collapse" data-bs-target="#progress">Personal progress
+                                </button>
+                                <div id="progress" class="collapse">
+                                    <div class="card" style="background-color: rgba(0, 0, 0, 0.475);">
+                                        <div class="card-body" style="color: white;">
+                                            <p class="normaltext"> Total In-Game Time: 5hrs10mins</p>
+                                            <p class="normaltext"> Character Highest Levels: Lv32</p>
+                                            <p class="normaltext"> In-Game progress: </p>
+                                            <div class="progress">
+                                                <div class="progress-bar" style="width:60%">60%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row"></div>
+
+    </div>
+    </div>
+    <!-- modal -->
+    <div class="modal fade" id="news1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="modal-header" style="background-color: #000000e9;">
+                    <h4 class="modal-title" style="color: white;">Patch Note 1.1</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- modal content -->
+                <div class="modal-body" style="background-color: #000000e9;height: fit-content;width: fit-content;">
+                    <p class="storytext">
+                        An update to improve the stability of gameplay and to adjust the game balance
+                        for DARK SOULS IV ™ has been distributed.
+                        We apologise for the inconvenience, and we urge you to apply the latest update
+                        before you continue to enjoy playing the game.</p>
+                    <p class="newstitletext">Targeted Platform</p>
+                    <p class="storytext"> PlayStation 4 / PlayStation 5 / Xbox One / Xbox Series X | S / Steam</p>
+                </div>
+                <!-- modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLOSE</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="news2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="modal-header" style="background-color: #000000e9;">
+                    <h4 class="modal-title" style="color: white;">Patch Note 1.0</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- modal content -->
+                <div class="modal-body" style="background-color: #000000e9;height: fit-content;width: fit-content;">
+                    <p class="storytext">
+                        An update to improve the stability of gameplay and to adjust the game balance
+                        for DARK SOULS IV ™ has been distributed.
+                        We apologise for the inconvenience, and we urge you to apply the latest update
+                        before you continue to enjoy playing the game.</p>
+                    <p class="newstitletext">Targeted Platform</p>
+                    <p class="storytext"> PlayStation 4 / PlayStation 5 / Xbox One / Xbox Series X | S / Steam</p>
+                </div>
+                <!-- modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLOSE</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Patch1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="modal-header" style="background-color: #000000e9;">
+                    <h4 class="modal-title" style="color: white;">Patch Note Alpha test</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- modal content -->
+                <div class="modal-body" style="background-color: #000000e9;height: fit-content;width: fit-content;">
+                    <p class="storytext">
+                        An update to improve the stability of gameplay and to adjust the game balance
+                        for DARK SOULS IV ™ has been distributed.
+                        We apologise for the inconvenience, and we urge you to apply the latest update
+                        before you continue to enjoy playing the game.</p>
+                    <p class="newstitletext">Targeted Platform</p>
+                    <p class="storytext"> PlayStation 4 / PlayStation 5 / Xbox One / Xbox Series X | S / Steam</p>
+                </div>
+                <!-- modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLOSE</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="notice1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="modal-header" style="background-color: #000000e9;">
+                    <h4 class="modal-title" style="color: white;">Urgent notice</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- modal content -->
+                <div class="modal-body" style="background-color: #000000e9;height: fit-content;width: fit-content;">
+                    <p class="storytext">
+                        We are currently experiencing problems with some of the codes that were sent to the testers.
+                        Please kindly wait for a while as we are currently investigating the cause.</p>
+                    <br>
+                    <p class="storytext"> We will keep you updated on the situation. We apologize for any inconvenience
+                        this may cause, and ask for your patience and understanding</p>
+                </div>
+                <!-- modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLOSE</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="notice2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="modal-header" style="background-color: #000000e9;">
+                    <h4 class="modal-title" style="color: white;">Urgent notice - Open BETA Test</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- modal content -->
+                <div class="modal-body" style="background-color: #000000e9;height: fit-content;width: fit-content;">
+                    <p class="storytext">
+                        Darksouls IV will start the open beta test on 2022.07.02, you can register an account and Login
+                        to download the Beta test version.
+                    </p>
+                    <p class="storytext"> If you find any problems/bugs during the game, please send feedback to our
+                        social media or forum, thank you for your cooperation and contribution</p>
+                    <p class="newstitletext">BETA test wil end on 2022.07.15.</p>
+
+                </div>
+                <!-- modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLOSE</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Sign-up">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+
+                <!-- modal header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Sign-up</h4>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- modal content -->
+                <div class="modal-body">
+                    <div class="col-4">
+                        <h6 style="font-size: medium; text-align: left;"><strong>Sign-up for new account</strong></h6>
+                        <div class="row" style="width: 388px;height: fit-content;">
+                            <div class="form-floating mb-3 mt-3">
+                                <input type="text" class="form-control" id="email" placeholder="Enter email"
+                                    name="email">
+                                <label for="email">&nbsp;&nbsp;Email</label>
+                            </div>
+                            <div class="form-floating mb-3 mt-3">
+                                <input type="text" class="form-control" id="username" placeholder="Enter User Name"
+                                    name="username">
+                                <label for="username">&nbsp;&nbsp;User Name</label>
+                            </div>
+                            <div class="form-floating mb-3 mt-3">
+                                <input type="text" class="form-control" id="password" placeholder="Enter password"
+                                    name="password">
+                                <label for="password">&nbsp;&nbsp;password</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#confirmationmodal">Confirm</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Login">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+
+                <!-- modal header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- modal content -->
+                <div class="modal-body">
+                    <div class="col">
+                        <h6 style="font-size: medium; text-align: left;"><strong>Register new account</strong></h6>
+                        <div class="row" style="width: 388px;height: fit-content;">
+                            <div class="form-floating mb-3 mt-3 text-center">
+                                <input type="text" class="form-control" id="email" placeholder="Enter email"
+                                    name="email">
+                                <label for="email">&nbsp;&nbsp;Email</label>
+                            </div>
+                            <div class="form-floating mb-3 mt-3 text-center">
+                                <input type="password" class="form-control" id="password" placeholder="Enter password"
+                                    name="password">
+                                <label for="password">&nbsp;&nbsp;password</label>
+                            </div>
+                            <div class="col">
+                                <input type="checkbox" id="remember" name="remember" value="remember">
+                                <label for="remember"> Remember me</label><br>
+                                <p>don't have an account? <a href="#">Sign-up</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#confirmationmodal">Confirm</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
